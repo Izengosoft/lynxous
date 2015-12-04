@@ -1,0 +1,197 @@
+/* intro_style.css */
+
+/* BODY */
+a {
+
+}
+a:hover{
+
+}
+
+h1,h2,h3,h4,p { margin:0; } 
+h1 { font-size:1.9em; }
+h2 { font-size:1.1em; }
+h3 { font-size:1em;   }
+
+html body{
+	height: 100%;
+	width:100%;
+	margin:0;
+	padding:0;
+	font-size:medium; 
+	color:#99CC66;
+	font-family:verdana,arial,sans-serif;
+	background-color:black;
+}
+
+.big_title{
+	font-size: 26px;
+    color: white;
+	font-weight: 100;
+}
+
+/* TOP BAR */
+
+#top_bar_intro{
+	height:24px;
+	width:100%;
+	background-color:#666666;
+	display:block;
+
+}
+
+.top_bar{
+	float:left;
+	padding:2px;
+
+}
+
+.intro_top_bar_logo_container{
+	float:left;
+	width:120px;
+	height:20px;
+	margin-left:5px;
+	display:block;
+	background-image: url("../img/top_bar_logo.png")
+
+}/* this is probably redundant just use the one above in top bar */
+
+
+.login_button{
+	float:right;
+	margin-right:5px;
+
+}
+
+/* CONTENT */
+
+#intro_content_container{
+	width:400px;
+	height:400px;
+	margin-top:70px;
+	margin-left:auto;
+	margin-right:auto;
+	background-image:url("../img/intro_bg_image_400px.png");
+
+}
+
+.intro_text_search_box{
+	width: 100%;
+    height: 100%;
+    padding-top: 57px;
+}
+
+.intro_phrase{
+	text-align:center;
+	display:block;
+
+}
+
+/* USER NAV BUTTONS AND SEARCH TOOL */
+
+#search_form_and_button_container{
+	height: 40px;
+    width: auto;
+    margin-top: 12px;
+    margin-left: 65px;
+    margin-right: auto;	
+
+}
+
+
+
+#button-container {
+	height:40px;
+	float:left;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: justify;
+	-webkit-justify-content: space-between;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+
+}
+
+#searchbox
+{
+    background-color: #eaf8fc;
+    background-image: linear-gradient(#111,#333);
+    border-radius: 35px;    
+    border-width:0;
+    border-style: solid;
+    border-color: #5E4830;          
+    width: 250px;
+    height: 18px;
+    padding: 10px;
+    margin-top:	3px;
+    overflow: hidden; /* Clear floats */
+}
+
+#search, 
+#submit {
+    float: left;
+}
+
+#search {
+    padding: 2px 9px;
+    height: 10px;
+    width: 155px;
+    border: 1px solid #93EA96;
+    font: normal 12px 'trebuchet MS', arial, helvetica;
+    background: #f1f1f1;
+    border-radius: 50px 3px 3px 50px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25) inset, 0 1px 0 rgba(255, 255, 255, 1);            
+}
+
+/* ----------------------- */
+
+#submit
+{       
+    background-color: #6cbb6b;
+    background-image: linear-gradient(#95d788, #6cbb6b);
+    border-radius: 3px 30px 30px 3px;    
+    border-width: 1px;
+    border-style: solid;
+    border-color: #99D697 #578e57 #447d43;
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0.3),0 1px 0 rgba(255, 255, 255, 0.3) inset;
+    height: 18px;
+    margin: 0 0 0 7px;
+    padding: 0;
+    width: 65px;
+    cursor: pointer;
+    font: bold 14px Arial, Helvetica;
+    color: #23441e;    
+    text-shadow: 0 1px 0 rgba(255,255,255,0.5);
+}
+
+#submit:hover {       
+    background-color: #95d788;
+    background-image: linear-gradient(#6cbb6b, #95d788);
+}   
+
+#submit:active {       
+    background: #95d788;
+    outline: none;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.5) inset;        
+}
+
+#submit::-moz-focus-inner {
+       border: 0;  /* Small centering fix for Firefox */
+}
+
+#search::-webkit-input-placeholder {
+   color: #9c9c9c;
+   font-style: italic;
+}
+
+#search:-moz-placeholder {
+   color: #9c9c9c;
+   font-style: italic;
+}  
+
+#search:-ms-placeholder {
+   color: #9c9c9c;
+   font-style: italic;
+}

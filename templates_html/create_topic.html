@@ -1,0 +1,29 @@
+<!DOCTYPE html>  <!-- create_topic.html -->
+<html lang="en"> 
+	<head>
+		<title>Lynxous - Get involved in a real Community... The one you live in!</title>
+  		<meta charset="utf-8" />
+		
+  		<link rel="stylesheet" href="css/create-topic.css"   media="all" />
+  		<link rel="stylesheet" href="css/font-awesome.min.css" />
+
+		<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+	</head>
+	<body>
+		<div class="create_topic_wrapper"> <!-- container for the box size -->
+			<div id="create_topic_container"> <!-- container for the padding border and margin -->
+				<span class="create_topic_hook">Create A New Topic</span>
+				<div id="create_topic_form_container">
+					<form id="create_new_topic_form" action="create-topic.php"> <!-- create-topic.php ACTION -->
+						<input id="create_topic_title_form" class="topic_form" type="text" placeholder="Title (18 characters)"/>
+						<textarea id="create_topic_short_desc_form" class="topic_form" type="input" placeholder="Short Description (200 characters)"></textarea>
+						<input id="create_topic_location_form" class="topic_form" type="text" placeholder="get_user_location..js"/>
+						<button id="create_topic_button" type="button" action="">Create!</button> <!-- new topic form submit button -->
+					</form>
+					<!-- cancel create and close lightbox, return to topic -->
+					<div class="cancel_create_topic"><a href="url_for_quit">cancel</a></div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

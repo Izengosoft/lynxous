@@ -1,0 +1,89 @@
+/** create_topic css **/
+
+
+.create_topic_wrapper{
+    width: 350px;
+    height: 400px;
+    margin-left: auto;
+    background-color: rgba(169, 169, 169, 0.19);
+    margin-right: auto;
+    margin-top: 100px;
+	border-radius: 10px;
+}
+
+#create_topic_container{
+    height: 100%;
+    width: 100%;
+    padding: 20px;
+    display: block;
+}
+
+.create_topic_hook{
+	font-size: 20px;
+    margin-left: 18%;
+	color:darkgrey;
+	font-family:verdana,arial,sans-serif;
+    font-weight: 100;
+}
+
+/** FORM **/
+/* this is the total form box so to speak */
+#create_topic_form_container{
+	width: 89%;
+	height: 300px;
+    float: left;
+    padding-top: 20px;
+    
+}
+
+#create_new_topic_form{
+    height: 311px;
+    width: 100%;
+    margin-left: 5px;
+    margin-right: 5px;
+
+}
+
+.topic_form{
+	width: 95%;
+    margin-bottom: 12px;
+    border-radius: 5px;
+    border-color: lightgrey;
+    border-style: groove;
+	-moz-box-shadow: 0px 0px 2px rgba(88, 83, 74, .7);
+    -webkit-box-shadow: 0px 0px 2px rgba(88, 83, 74, .7);
+    box-shadow: 0px 0px 2px rgba(88, 83, 74, .7);
+}
+
+#create_topic_title_form{ 
+	height: 24px;
+	overflow: hidden;
+
+}
+
+
+#create_topic_short_desc_form{
+	height:180px;
+
+}
+
+
+#create_topic_location_form{
+	height: 24px;
+    overflow: hidden;
+}
+
+
+#create_topic_button{
+
+}
+
+/** decoration but not sizing **/
+.topic_forms{
+
+}
+
+.cancel_create_topic{
+
+}
+

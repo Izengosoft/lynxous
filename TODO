@@ -1,0 +1,65 @@
+lynxous TODO 12.3.2015:19:15:00// *** web *** (device will frame the page differently.)
+
+1). intro.html: this is the static entry (without cookies) for first time users.. OTHERWISE:: landing from API search reference: Goes to page requested --UNLOGGED 
+
+2). index.html: this is the main entry, it will (TEST: Logged? or not, cookies, etc... and run load scripts) 
+	if not logged the page requested will appear without the 'top_bar_user.php' ="true"; -//- ///CHANGED to >>> /in/index.html (protected folder/pages --LOGGED)
+	
+2.1). I'm thinking... a user dashBoardPage w/ newsfeed: member follow posts, new events(all local, choose others(state, national, global)), Scheduled Group Activity Meetings, follows (which may mean user pages? or tapNameAndFollow?) this should happen later (((focus))) on the now
+	
+3). search engine and landing page.. 'search.php' 'searchResults.php' ***API*** (search engine port and search tools) keys and secret etc...
+3.1). search result image-blocks with link to page ***API***  -//- /// CHANGED to >>> lucene.5.3.1 >> java servlet
+		SEARCH INDEX:  location, topic-title, short-desc, (loads 12 pages with a [MORE] button following)
+
+4). terms and conditions page 'terms.php' (lightboxed pop-up)
+
+5) user settings page 'userSettings.php' (lightboxed pop-up)
+
+OTHER PAGES (functions):
+	1). addMap.php   => OR:: create-new-topic.php with everything on a single page, but it seems like it could call OR ALL call the functions from functions.php 
+	2). addShortDescription.php
+	3). addMainDescription.php
+	4). addQuickLynx.php
+	5). uploadImages.php
+	6). editImages.php
+	7). addResources.php
+	8). createNewEvent.php
+	9). createNewTopic.php 
+	10).topicDiscussion.php
+	11). editShortDescription.php
+	12). editMainDescription.php >>> shortCode.php? extensions
+	13). newAccount.php? this is probably inside the login script...? This goes in once the page load sequence is finished, including the config. and settings.
+
+INDEX.HTML will run the opening scripts:
+
+	1). GET_cookies
+	2). GET_location
+	3). GET_status (logged or not)
+	4). 'config.php', 'load.php' 'constants.php' and any other scripts here...
+	5). security should be considered here
+
+
+jQuery.isXMLDoc( document ) // false (default?)
+jQuery.isXMLDoc( document.body ) // false
+
+<p id="someElement"></p><p id="anotherElement"></p><p id="someElement"></p>
+<p id="anotherElement"></p>HTML copytextpop-upvar xml = "",
+  xmlDoc = $.parseXML( xml ),
+  $xml = $( xmlDoc ),
+  $title = $xml.find( "title" );
+
+ // Append "RSS Title" to #someElement
+$( "#someElement" ).append( $title.text() );
+
+ // Change the title to "XML Title"
+$title.text( "XML Title" );
+
+ // Append "XML Title" to #anotherElement
+$( "#anotherElement" ).append( $title.text() );
+
+USER DASH: 
+
+$( "#feeds" ).load( "feeds.php", { limit: 25 }, function() {
+  alert( "The last 25 entries in the feed have been loaded" );
+});
+

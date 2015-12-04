@@ -1,0 +1,14 @@
+change.log/www.lynxous.com-alt:localhost/lynxous/
+
+created index.html, lynx.css, intro.html,intro.css -//- 11.30.2015/ no time / light -//-
+
+added folders /css/, /fonts/-- /// added fontawesome to /fonts/-- /// -//- 12.1.2015/ no time / light -//-
+added folders /img/, /includes/ /js/-- /// added jquery.min.js to /js/
+created guest.html // moved index.html, lynx.css and all copied sub folders to new folder.../in/
+	NOTE: the /in/ folder is a way to offset the user area into one place and protect the entire user base inside all pages, sub folder etc..
+	
+added folder /template_html/ 
+	NOTE: to store the draft html templates that will get broken into .php files in sections
+	templates include; create_topic.html <jquery fancybox launch>
+	>>>forked Fancybox to Izengosoft.fancybox [Github] added 12.2.2015
+	>>>forked js.converse to Izengosoft.js.converse [Github] added 12.2.2015/ no time / light -//-
