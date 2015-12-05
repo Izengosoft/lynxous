@@ -1,40 +1,26 @@
-<!DOCTYPE html> <!-- BREAK THIS INTO PHP BY SECTIONS see /in/index.php for break down -->
-<html lang="en"> 
-	<head>
-		<title>Lynxous - Get involved in a real Community... The one you live in!</title>
-  		<meta charset="utf-8" />
-		
-  		<link rel="stylesheet" href="css/lynx.css"   media="all" />
-  		<link rel="stylesheet" href="css/font-awesome.min.css" />
+<?php
 
-		<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
-</head>
-
-<body>
-
-	<div class="background_wrapper">
-		<div id="wrapper"><!-- this is the frame around the width of the content -->
+	/**	content-section.php
+	
+		this is the main content template for topics, which is populated by get_topic($_topic_name) and returns a json or XML to populate it
+		A Durty Mess that needs clean-up; it also needs the functions built to parse the $_topic object and a mechanism to place the content
 		
+		@params $_topic
+		@package lynxous
 		
-			<!--TOP BAR SECTION -->
-			<!-- this is the top bar section for the logged in user. I need to create another which can be called for unlogged "intro.html" -->
-			<section id="top_bar_section_logged"><!-- maybe change the include file for logged verses unlogged -->
-				<div class="top_bar_container">
-					<div class="top_bar_logo_container"></div><!-- these both need to be filled with values for logo and text link -->
-					<div class="top_bar_container_right">notifications</div>
-						<!-- we need an unlogged versioning tool to catch "not logged", send to intro.html -->
-				</div>
-			</section>
-			
-<!-- this needs to know if our user is loggin in or not... IF LOGGED = TRUE <?php require ('ui/user-header-section.php'); ?> -->
-			
+		created by LiGhT.. 12.4 2015
+	
+	*/
+
+?>	
+	
 			<!-- CONTENT SECTION -->
 			<section id="content_section">
 				<div id="left_aside_container">
 						<div class="topic_box">
 							<div class="topic_icon_container">
 								<div class="topic_icon"></div>
-							</div><!-- should create a default "invitation" to add an icon, just in case -->
+							</div><!-- should create a default "invitation" to add an icon, just in case MOVE TO TODO - --> 
 							<div class="topic_title_container">
 								<div class="topic_title"><h3 class="title">Topic Title</h2></div>
 							</div>
@@ -50,7 +36,7 @@
 				</div>
 				<div id="center_content_container">
 					<div class="center_content">
-<!-- this needs to be sussed out still --><div id="main"><div class="oi"><h2 class="screenreader-only">Main</h2>
+					<div id="main"><div class="oi"><h2 class="screenreader-only">Main</h2>
 
      <ul class="tabs">
       <li class="selected"><h3 class="tab-label">general info</h3>
@@ -80,13 +66,4 @@
 						<div id="whose_online"></div>
 					</aside>
 				</div>
-			
-			<!-- FOOTER SECTION -->
-
-				<div class="footer_container">
-					<div id="footer">lynxous.com - all right reserved copyright 2015</div><!-- not sure how I want to make the footer or what i want in it -->
-				</div>
 			</section>
-		</div>
-	</div>	
-</body>

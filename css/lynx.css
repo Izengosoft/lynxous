@@ -436,7 +436,7 @@ html body{
 
 
 #map_box{
-	height:120px;
+	height:150px;
 	width:90%;
 	margin-left:5%;
 	margin-right:5%;
@@ -466,7 +466,7 @@ html body{
 }
 
 #hot_links_box{
-	height:160px;
+	height:230px;
 	width:90%;
 	margin-left:5%;
 	margin-right:5%;
@@ -605,7 +605,7 @@ ul.tabs .hover{
 
 #ads_box{
 	width:90%;
-	height:180px;
+	height:230px;
 	margin-top:10px;
 	margin-left:5%;
 	margin-right:5%;
@@ -617,7 +617,7 @@ ul.tabs .hover{
 
 #whose_online{
 	width:90%;
-	height:270px;
+	height:320px;
 	margin-top:10px;
 	margin-left:5%;
 	margin-right:5%;

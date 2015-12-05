@@ -1,12 +1,23 @@
 <?php
-/** This file was hacked from Wordpress 4.2.1 under the terms of the GNU GENERAL PUBLIC LICENSE. This version complete and intact can be found at:
- 	www.github.org/izengosoft/wordpress-4.2.1 It is free and open source to any one see: WP-GNU-license.txt for terms and conditions. pieces of this code was pulled and modified and as well falls under this same license. Any altered or modified code within has been identified according to the terms and conditions set in the GNU GENERAL PUBLIC LICENSE, which is included with this release and is limited to only the parts of the original WP code hacked, which can be reused or modified under the same GNU license. @hacked by LiGhT... 12.3.2015
+
+	/** constants.php
 	
- * 	place all global constants within this file
- *
- *
- *
- */
+		This file was hacked from Wordpress 4.2.1 under the terms of the GNU GENERAL PUBLIC LICENSE. This version complete and intact can be found at:
+		www.github.org/izengosoft/wordpress-4.2.1 It is free and open source to any one see: WP-GNU-license.txt for terms and conditions. pieces of this code was pulled and modified and as well falls under this same license. Any altered or modified code within has been identified according to the terms and conditions set in the GNU GENERAL PUBLIC LICENSE, which is included with this release and is limited to only the parts of the original WP code hacked, which can be reused or modified under the same GNU license. @hacked by LiGhT... 12.3.2015
+		
+		place all global constants within this file
+		and clean it up a bit, remove WP version notes and remove this comment
+		
+		@params human-readable time
+		@params cookie constants
+		@params functionality constants
+		@params [finally] load 'setting.php'
+		@package lynxous
+		
+		@hack Wordpress default-constants
+		created by LiGhT.. 12.4 2015
+		
+	 */
 
 
 // Constants for expressing human-readable intervals
@@ -34,7 +45,6 @@ function cookie_constants() {
 	 * @since 1.5.0
 	 */
 	if ( !defined( 'COOKIEHASH' ) ) {
-			//simplified on 12.3.2015 hacked by LiGhT...
 			define( 'COOKIEHASH', md5( ABSPATH ) ); // $siteurl REMOVED from WP and replaced with www.(this).com 
 	}
 
@@ -104,7 +114,7 @@ function cookie_constants() {
 }
 
 /**
- * Defines cookie related WordPress constants
+ * Defines cookie related lynxous constants
  *
  * @since 3.0.0
  */

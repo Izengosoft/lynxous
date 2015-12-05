@@ -1,37 +1,43 @@
 <?php
-/* config.php sets the db constants and any global constants we need */
+	/**	config.php
+	
+		This file was hacked from Wordpress 4.2.1 under the terms of the GNU GENERAL PUBLIC LICENSE. This version complete and intact can be found at:
+		www.github.org/izengosoft/wordpress-4.2.1 It is free and open source to any one see: WP-GNU-license.txt for terms and conditions. pieces of this code was pulled and modified and as well falls under this same license. Any altered or modified code within has been identified according to the terms and conditions set in the GNU GENERAL PUBLIC LICENSE, which is included with this release and is limited to only the parts of the original WP code hacked, which can be reused or modified under the same GNU license.
+	
+		sets the db constants and any global constants we need
 
-/*** hacked from wp by light ***//
+		This file has the following configurations: 
+		@configs MySQL settings, Table Prefix
+		
+		@params Secret Keys 
+		@params ABSPATH
+	 	@package lynxous
+		
+		@hack Wordpress config
+		created by LiGhT.. 12.4.2015
+		
+	 */
 
-
-/* data base configurations.
- *
- * This file has the following configurations: MySQL settings, Table Prefix,
- * Secret Keys, and ABSPATH. 
- *
- * @package Lynxous
- */
-
-// ** MySQL settings ** //
-/** The name of the database */
+/** MySQL settings */
+// The name of the database 
 define('DBNAME', 'lynxous_db');
 
-/** MySQL database username */ // change online to lynxous_db_superuser
+// MySQL database username  ////////////////////////////////////////////////////////////////////// change online to lynxous_db_superuser/////////////
 define('DBUSER', 'root'); 
 
-/** MySQL database password // change online to AtdPlw7wbb03tAFU1iPxmQHkbex3n7GGy8RdCeH2 */
+// MySQL database password //////////////////////////////////////////////////////////// change online to AtdPlw7wbb03tAFU1iPxmQHkbex3n7GGy8RdCeH2 */
 define('DBPASS', '');
 
-/** MySQL hostname */
+// MySQL hostname */
 define('DBHOST', 'localhost');
 
-/** Database Charset to use in creating database tables. */
+// Database Charset to use in creating database tables. */
 define('DBCHARSET', 'utf8');
 
-/** The Database Collate type. Don't change this if in doubt. */
+// The Database Collate type. Don't change this if in doubt. */
 define('DBCOLLATE', '');
 
-/*
+/**
  * Authentication Unique Keys and Salts.
  *
  * We can change these at any point in time to invalidate all existing cookies. This will force all users to have to log in again.
@@ -45,10 +51,10 @@ define('SECURE_AUTH_SALT', 'i!lG?WB[;-71{3St&UK-8otD~vb{k*hW06T(0n{=~kw}(_4=oz**
 define('LOGGED_IN_SALT',   'SVF9Hb:o? h85X8+>bk(TeyJ7IziB<ipI2q%O/2Q:uRRgOt1,nyo{$;5he~v?mwR');
 define('NONCE_SALT',       '={J;p<}(CD7;6+rtho!^3kV1WWj|xBUJh7`eB=N3LuH<I#@OwS}V>$v&1915i!Lk');
 
-/**#@-*/
+
 
 /**
- * Lynxous Database Table prefix.
+ * lynxous Database Table prefix.
  *
  * You can have multiple installations in one database if you give each a unique
  * prefix. Only numbers, letters, and underscores please!
@@ -64,12 +70,12 @@ $table_prefix  = 'lynx_';
  */
 define('DEBUG', false);
 
-/** Absolute path to the Lynxous directory. */
+/** Absolute path to the lynxous directory. */
 if ( !defined('ABSPATH') )
 	define('ABSPATH', dirname(__FILE__) . '/');
 
-/** Sets up WordPress vars and included files. */
-require_once(ABSPATH . 'settings.php');
+/** Sets up lynxous vars and included files. */
+require_once(ABSPATH . 'includes/settings.php');   /////////////////////////////bracket thoughts~~~~~~~
 
 //** add any new constant here **//
 
