@@ -2,9 +2,11 @@ lynxous TODO 12.3.2015:19:15:00// *** web *** (device will frame the page differ
 
 1). intro.html: this is the static entry (without cookies) for first time users.. OTHERWISE:: landing from API search reference: Goes to page requested --UNLOGGED 
 
-2). index.html: this is the main entry, it will (TEST: Logged? or not, cookies, etc... and run load scripts) 
+2). index.php: this is the main entry, it will 
+
+// cannot test till constants.php executes only get_cookie(), (TEST: Logged? or not, cookies, etc... and run load scripts) 
 	if not logged the page requested will appear without the 'top_bar_user.php' ="true"; -//- ///CHANGED to >>> /in/index.html (protected folder/pages --LOGGED)
-	
+	//12.5.2015 LiGhT.. //: start installing login process in (ASBPATH . index.php <top-bar-login-button>
 2.1). I'm thinking... a user dashBoardPage w/ newsfeed: member follow posts, new events(all local, choose others(state, national, global)), Scheduled Group Activity Meetings, follows (which may mean user pages? or tapNameAndFollow?) this should happen later (((focus))) on the now
 	
 3). search engine and landing page.. 'search.php' 'searchResults.php' ***API*** (search engine port and search tools) keys and secret etc...
